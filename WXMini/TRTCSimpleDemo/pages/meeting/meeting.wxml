@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="trtc-demo-container">
+  <view class='title'  style='padding-top:{{(headerHeight + statusBarHeight)/2 - 12}}px'>
+    <view>多人会议</view>
+  </view>
+  <view class="input-box">
+    <input type="number" value="{{roomID}}" maxlength="10" bindinput='enterRoomID' placeholder="请输入房间号" placeholder-style="color:#ffffff;opacity: 0.55;"/>
+  </view>
+  <view class="choice-content">
+    <label class="label" for="switchLocalVideo">
+      <text>本地视频</text>
+      <switch id="switchLocalVideo" color="#006eff" checked="{{localVideo}}" data-key="localVideo" bindchange="switchHandler"/>
+    </label>
+    <label class="label" for="switchLocalAudio">
+      <text>本地音频</text>
+      <switch id="switchLocalAudio" color="#006eff" checked="{{localAudio}}" data-key="localAudio" bindchange="switchHandler"/>
+    </label>
+  </view>
+</view>
+
+<view class='bottom-btn'>
+  <button class="btn" bindtap="enterRoom" hover-class="none">进入房间</button>
+</view>
+<cover-image class='close' style="top:{{(headerHeight + statusBarHeight) - 34}}rpx"src="../../static/images/back.png" bindtap="onBack"></cover-image>
