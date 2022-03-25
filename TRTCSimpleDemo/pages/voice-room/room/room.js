@@ -95,6 +95,7 @@ Page({
     const TRTC_EVENT = this.TRTC.EVENT
     // 初始化事件订阅
     this.TRTC.on(TRTC_EVENT.LOCAL_JOIN, (event) => {
+      getApp().aegisReportEvent('inVoiceRoom', 'inVoiceRoom-success')
       console.log('* room LOCAL_JOIN', event)
       // 进房成功，触发该事件后可以对本地视频和音频进行设置
       if (this.data.role === 'presenter') {

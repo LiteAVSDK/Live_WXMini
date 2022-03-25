@@ -99,6 +99,7 @@ Page({
     // 初始化事件订阅
     this.TRTC.on(TRTC_EVENT.LOCAL_JOIN, (event) => {
       console.log('* room LOCAL_JOIN', event)
+      getApp().aegisReportEvent('inMeetingRoom', 'inMeetingRoom-success')
       if (this.data.localVideo) {
         this.setPusherAttributesHandler({ enableCamera: true })
       }
