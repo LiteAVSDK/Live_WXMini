@@ -23,7 +23,6 @@ Page({
     this.init(options)
     this.bindTRTCRoomEvent()
     this.enterRoom({ roomID: options.roomID })
-    getApp().aegisReportEvent('inVideoCallRoom', 'inVideoCallRoom-success')
   },
 
   onReady() {
@@ -87,6 +86,7 @@ Page({
     // 初始化事件订阅
     this.TRTC.on(TRTC_EVENT.LOCAL_JOIN, (event) => {
       console.log('* room LOCAL_JOIN', event)
+      getApp().aegisReportEvent('inVideoCallRoom', 'inVideoCallRoom-success')
       // // 进房成功，触发该事件后可以对本地视频和音频进行设置
       this.setPusherAttributesHandler({ enableCamera: true })
       this.setPusherAttributesHandler({ enableMic: true })
