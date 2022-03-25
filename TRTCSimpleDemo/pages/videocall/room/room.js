@@ -23,6 +23,7 @@ Page({
     this.init(options)
     this.bindTRTCRoomEvent()
     this.enterRoom({ roomID: options.roomID })
+    getApp().aegisReportEvent('inVideoCallRoom', 'inVideoCallRoom-success')
   },
 
   onReady() {

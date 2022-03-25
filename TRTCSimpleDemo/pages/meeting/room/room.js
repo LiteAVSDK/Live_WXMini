@@ -35,6 +35,7 @@ Page({
     this.init(options)
     this.bindTRTCRoomEvent()
     this.enterRoom({ roomID: options.roomID })
+    getApp().aegisReportEvent('inMeetingRoom', 'inMeetingRoom-success')
   },
 
   onReady() {

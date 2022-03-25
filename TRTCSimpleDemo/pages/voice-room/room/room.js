@@ -30,6 +30,7 @@ Page({
     this.init(options)
     this.bindTRTCRoomEvent()
     this.enterRoom({ roomID: options.roomID })
+    getApp().aegisReportEvent('inVoiceRoom', 'inVoiceRoom-success')
   },
 
   onReady() {
