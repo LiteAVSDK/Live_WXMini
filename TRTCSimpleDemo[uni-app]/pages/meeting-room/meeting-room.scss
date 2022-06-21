@@ -1,0 +1,136 @@
+@import "@/style/index";
+$font-color: #ffffff;
+
+.container {
+  box-sizing: border-box;
+
+  .scroll-view {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .button-box {
+      width: 2.6rem;
+      height: 2.6rem;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .button-icon {
+        width: 60%;
+        height: 60%;
+      }
+    }
+  }
+
+  .user-list {
+    color: $font-color;
+    width: 60vw;
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    .user-list-scroll-view {
+      max-height: 50vh;
+      box-sizing: border-box;
+    }
+
+    .user-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+
+      .name {
+        max-width: 40%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .button-box {
+        background-color: transparent;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .live-container {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    display: inline-block;
+
+    .button-group {
+      position: absolute;
+
+      .button-box {
+        background-color: transparent;
+      }
+    }
+
+    .mute-button {
+      flex-direction: column;
+      bottom: 0;
+      right: 0;
+    }
+
+    .audio-volume {
+      color: #ffffff;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .audio-active {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .audio-active .image {
+    bottom: 0;
+  }
+
+  .image {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+  }
+}
+
+live-pusher.live-pusher {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+live-player.live-player {
+  height: 100%;
+  width: 100%;
+}
+
+.red {
+  background-color: red !important;
+}

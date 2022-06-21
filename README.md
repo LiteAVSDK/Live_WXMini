@@ -19,6 +19,18 @@
 |  |  ├─ meeting                   // 演示 TRTC 多人会议的示例代码
 |  |  ├─ videocall                 // 演示 TRTC 双人通话的示例代码
 |  |  ├─ voice-room                // 演示 TRTC 语音聊天室的示例代码
+├─ TRTCSimpleDemo[uni-app]         // TRTC 基础功能演示代码uni-app版本
+|  ├─ debug                        // 用于前端生成usersig
+|  ├─ lib                          // 公用库
+|  ├─ pages                        // 微信小程序页面文件夹
+|  |  ├─ index                     // 首页
+|  |  ├─ meeting-room              // 演示 TRTC 多人会议的示例代码
+|  |  ├─ video-call                // 演示 TRTC 双人通话的示例代码
+|  |  ├─ voice-room                // 演示 TRTC 语音聊天室的示例代码
+|  ├─ static                       // 静态文件
+|  ├─ style                        // 公共样式文件
+|  ├─ uni-modules                  // uni-app提供的第三方库
+|  ├─ utils                        // utils
 ```
 
 

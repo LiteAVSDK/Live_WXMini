@@ -1,0 +1,44 @@
+@import "@/style/index";
+$font-color: #ffffff;
+.container {
+  padding: 20% 10%;
+  box-sizing: border-box;
+}
+.input-box {
+  text-align: center;
+  color: $font-color;
+  .placeholder {
+    color: #577785;
+  }
+  .input-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20%;
+    .title {
+      min-width: 90px;
+    }
+    input {
+      border-bottom: 1px solid #577785;
+      color: $font-color;
+      width: 100%;
+    }
+  }
+  
+}
+.radio-box {
+  color: $font-color;
+  display: flex;
+  justify-content: space-between;
+  .radio-row {
+    display: flex;
+    align-items: center;
+  }
+}
+.button-group {
+  margin-top: 30%;
+  button {
+    background-color: $main-color;
+    color: $font-color;
+  }
+}

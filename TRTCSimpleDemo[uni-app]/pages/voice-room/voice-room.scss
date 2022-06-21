@@ -1,0 +1,79 @@
+@import "@/style/index";
+$font-color: #ffffff;
+
+.container {
+  padding: 20% 0;
+  box-sizing: border-box;
+  color: $font-color;
+  text-align: center;
+
+  .user-seat-pusher {
+    margin-bottom: 1rem;
+    .nick {
+      max-width: 100%;
+    }
+  }
+  .user-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
+
+    .user-seat {
+      text-align: center;
+      flex: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  }
+  .avatar {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: #999;
+    display: inline-block;
+
+    image {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+    }
+  }
+  .nick {
+    margin-top: 0.5rem;
+    max-width: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50%;
+    .button-box {
+      width: 3rem;
+      height: 3rem;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .button-icon {
+        width: 60%;
+        height: 60%;
+      }
+    }
+  }
+  .live-pusher {
+    visibility: hidden;
+  }
+  .live-player {
+    visibility: hidden;
+    height: 0;
+  }
+}

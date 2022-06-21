@@ -1,0 +1,52 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/voice-room/voice-room-config",
+			"style": {
+				"navigationBarTitleText": "语音聊天室-房间设置"
+			}
+		},
+		{
+			"path": "pages/voice-room/voice-room",
+			"style": {
+				"navigationBarTitleText": "语音聊天室"
+			}
+		},
+		{
+			"path": "pages/video-call/video-call-config",
+			"style": {
+				"navigationBarTitleText": "双人通话-房间设置"
+			}
+		},
+		{
+			"path": "pages/video-call/video-call",
+			"style": {
+				"navigationBarTitleText": "双人通话"
+			}
+		},
+		{
+			"path": "pages/meeting-room/meeting-room-config",
+			"style": {
+				"navigationBarTitleText": "多人会议-房间设置"
+			}
+		},
+		{
+			"path": "pages/meeting-room/meeting-room",
+			"style": {
+				"navigationBarTitleText": "多人会议"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
