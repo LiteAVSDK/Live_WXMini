@@ -1,0 +1,9 @@
+@import './settings/variable.scss';
+
+// 默认页面根节点容器样式
+.container {
+    background-image: $background-image;
+	background-size: cover;
+    width: 100%;
+    height: 100vh;
+}

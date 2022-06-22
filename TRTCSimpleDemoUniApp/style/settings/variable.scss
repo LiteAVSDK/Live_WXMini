@@ -1,0 +1,22 @@
+// 行高
+$line-height-base: 1.5 !default;
+$line-height-lg: 2 !default;
+$line-height-sm: 1.25 !default;
+// 字体颜色
+$info: #17a2b8 !default;
+$danger: #dc3545 !default;
+
+// 字体大小 浏览器默认16px
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-slg: $font-size-base * 1.75 !default;
+
+// 字重
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+
+// 背景
+$background-image: url('https://mc.qcloudimg.com/static/img/7da57e0050d308e2e1b1e31afbc42929/bg.png');
+
+// 主题颜色
+$main-color:#006eff
