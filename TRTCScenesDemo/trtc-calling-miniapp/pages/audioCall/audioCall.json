@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "TUICalling": "../../components/TUICalling/TUICalling"
-  },
-  "navigationStyle": "custom",
-  "disableScroll": true
-}
