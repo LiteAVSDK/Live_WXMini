@@ -32,7 +32,7 @@
 
    windows端
    ```
-   xcopy node_modules\@tencentcloud\call-uikit-wechat\TUICallKit .\ /i /e
+   xcopy node_modules\@tencentcloud\call-uikit-wechat ./i /e
    ```
 
 3. 项目导入到微信开发者工具，构建 npm。微信开发者工具【工具】->【构建 npm】。具体如下图：
