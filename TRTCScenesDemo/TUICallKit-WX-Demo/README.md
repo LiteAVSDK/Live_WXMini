@@ -24,7 +24,8 @@
    ```
    npm install
    ```
-   
+3. 移动 @tencentcloud/call-uikit-wechat SDK
+
    mac端
    ```
    cp -r node_modules/@tencentcloud/call-uikit-wechat/TUICallKit ./
@@ -34,12 +35,11 @@
    ```
    xcopy node_modules\@tencentcloud\call-uikit-wechat ./i /e
    ```
-
-3. 项目导入到微信开发者工具，构建 npm。微信开发者工具【工具】->【构建 npm】。具体如下图：
+4. 项目导入到微信开发者工具，构建 npm。微信开发者工具【工具】->【构建 npm】。具体如下图：
    
    <img src="https://web.sdk.qcloud.com/component/trtccalling/images/miniProgram/build-npm.png" width="400" height="600" align="middle" />
 
-4. 修改 `./TUICallKit/MiniProgram/TUICalling/debug/GenerateTestUserSig.js` 文件 的 SDKAPPID 以及 SECRETKEY（阅读文末 [如何获得SDKAppID与SecretKey？](#如何获得-SDKAppID-与-SecretKey？)）
+5. 修改 `./TUICallKit/MiniProgram/TUICalling/debug/GenerateTestUserSig.js` 文件 的 SDKAPPID 以及 SECRETKEY（阅读文末 [如何获得SDKAppID与SecretKey？](#如何获得-SDKAppID-与-SecretKey？)）
    
    <img src="https://cloudcache.tencentcs.com/qcloud/tea/app/trtc.5244f2c94967bc748641720a8c9d500a.png"/>
 
